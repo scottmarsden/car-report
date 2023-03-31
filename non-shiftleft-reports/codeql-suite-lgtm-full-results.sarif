@@ -3568,99 +3568,93 @@
       }
     }, {
       "location" : {
-        "uri" : "app/src/main/java/me/kuehle/carreport/util/webdav/CertificateHelper.java",
+        "uri" : "app/src/main/java/me/kuehle/carreport/data/calculation/AbstractDistancePriceCalculation.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 52
       }
     }, {
       "location" : {
-        "uri" : "app/src/main/java/me/kuehle/carreport/data/calculation/AbstractDistancePriceCalculation.java",
+        "uri" : "app/src/main/java/me/kuehle/carreport/data/calculation/AbstractPriceVolumeCalculation.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 53
       }
     }, {
       "location" : {
-        "uri" : "app/src/main/java/me/kuehle/carreport/data/calculation/AbstractPriceVolumeCalculation.java",
+        "uri" : "app/src/main/java/me/kuehle/carreport/data/calculation/AbstractVolumeDistanceCalculation.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 54
       }
     }, {
       "location" : {
-        "uri" : "app/src/main/java/me/kuehle/carreport/data/calculation/AbstractVolumeDistanceCalculation.java",
+        "uri" : "app/src/main/java/me/kuehle/carreport/gui/AbstractDataDetailFragment.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 55
       }
     }, {
       "location" : {
-        "uri" : "app/src/main/java/me/kuehle/carreport/gui/AbstractDataDetailFragment.java",
+        "uri" : "app/src/main/java/me/kuehle/carreport/gui/FirstStartActivity.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 56
       }
     }, {
       "location" : {
-        "uri" : "app/src/main/java/me/kuehle/carreport/gui/FirstStartActivity.java",
+        "uri" : "app/src/main/java/me/kuehle/carreport/gui/dialog/EditFuelTypeDialogFragment.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 57
       }
     }, {
       "location" : {
-        "uri" : "app/src/main/java/me/kuehle/carreport/gui/dialog/EditFuelTypeDialogFragment.java",
+        "uri" : "app/src/main/java/me/kuehle/carreport/gui/dialog/MessageDialogFragment.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 58
       }
     }, {
       "location" : {
-        "uri" : "app/src/main/java/me/kuehle/carreport/gui/dialog/MessageDialogFragment.java",
+        "uri" : "app/src/main/java/me/kuehle/carreport/gui/dialog/SupportColorPickerDialogFragment.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 59
       }
     }, {
       "location" : {
-        "uri" : "app/src/main/java/me/kuehle/carreport/gui/dialog/SupportColorPickerDialogFragment.java",
+        "uri" : "app/src/main/java/me/kuehle/carreport/gui/dialog/SupportMessageDialogFragment.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 60
       }
     }, {
       "location" : {
-        "uri" : "app/src/main/java/me/kuehle/carreport/gui/dialog/SupportMessageDialogFragment.java",
+        "uri" : "app/src/main/java/me/kuehle/carreport/data/balancing/RefuelingBalancer.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 61
       }
     }, {
       "location" : {
-        "uri" : "app/src/main/java/me/kuehle/carreport/data/balancing/RefuelingBalancer.java",
+        "uri" : "app/src/main/java/me/kuehle/carreport/data/report/FuelConsumptionReport.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 62
       }
     }, {
       "location" : {
-        "uri" : "app/src/main/java/me/kuehle/carreport/data/report/FuelConsumptionReport.java",
+        "uri" : "app/src/main/java/me/kuehle/carreport/data/report/FuelPriceReport.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 63
       }
     }, {
       "location" : {
-        "uri" : "app/src/main/java/me/kuehle/carreport/data/report/FuelPriceReport.java",
+        "uri" : "app/src/main/java/me/kuehle/carreport/data/report/MileageReport.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 64
       }
     }, {
       "location" : {
-        "uri" : "app/src/main/java/me/kuehle/carreport/data/report/MileageReport.java",
+        "uri" : "app/src/main/java/me/kuehle/carreport/gui/PreferencesReportOrderFragment.java",
         "uriBaseId" : "%SRCROOT%",
         "index" : 65
       }
     }, {
       "location" : {
-        "uri" : "app/src/main/java/me/kuehle/carreport/gui/PreferencesReportOrderFragment.java",
-        "uriBaseId" : "%SRCROOT%",
-        "index" : 66
-      }
-    }, {
-      "location" : {
         "uri" : "app/src/main/java/me/kuehle/carreport/util/webdav/WebDavClient.java",
         "uriBaseId" : "%SRCROOT%",
-        "index" : 67
+        "index" : 66
       }
     } ],
     "results" : [ {
@@ -7132,90 +7126,6 @@
         }
       } ]
     }, {
-      "ruleId" : "java/dereferenced-value-is-always-null",
-      "ruleIndex" : 81,
-      "message" : {
-        "text" : "Variable [s](1) is always null here."
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "app/src/main/java/me/kuehle/carreport/util/webdav/CertificateHelper.java",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 52
-          },
-          "region" : {
-            "startLine" : 180,
-            "startColumn" : 25,
-            "endColumn" : 26
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "3049b5ca05a7a567:1",
-        "primaryLocationStartColumnFingerprint" : "19"
-      },
-      "relatedLocations" : [ {
-        "id" : 1,
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "app/src/main/java/me/kuehle/carreport/util/webdav/CertificateHelper.java",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 52
-          },
-          "region" : {
-            "startLine" : 178,
-            "startColumn" : 72,
-            "endColumn" : 80
-          }
-        },
-        "message" : {
-          "text" : "s"
-        }
-      } ]
-    }, {
-      "ruleId" : "java/dereferenced-value-is-always-null",
-      "ruleIndex" : 81,
-      "message" : {
-        "text" : "Variable [s](1) is always null here."
-      },
-      "locations" : [ {
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "app/src/main/java/me/kuehle/carreport/util/webdav/CertificateHelper.java",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 52
-          },
-          "region" : {
-            "startLine" : 188,
-            "startColumn" : 25,
-            "endColumn" : 26
-          }
-        }
-      } ],
-      "partialFingerprints" : {
-        "primaryLocationLineHash" : "3049b5ca05a7a567:2",
-        "primaryLocationStartColumnFingerprint" : "19"
-      },
-      "relatedLocations" : [ {
-        "id" : 1,
-        "physicalLocation" : {
-          "artifactLocation" : {
-            "uri" : "app/src/main/java/me/kuehle/carreport/util/webdav/CertificateHelper.java",
-            "uriBaseId" : "%SRCROOT%",
-            "index" : 52
-          },
-          "region" : {
-            "startLine" : 186,
-            "startColumn" : 72,
-            "endColumn" : 80
-          }
-        },
-        "message" : {
-          "text" : "s"
-        }
-      } ]
-    }, {
       "ruleId" : "java/unused-container",
       "ruleIndex" : 84,
       "message" : {
@@ -7226,7 +7136,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/data/calculation/AbstractDistancePriceCalculation.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 53
+            "index" : 52
           },
           "region" : {
             "startLine" : 38,
@@ -7250,7 +7160,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/data/calculation/AbstractPriceVolumeCalculation.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 54
+            "index" : 53
           },
           "region" : {
             "startLine" : 35,
@@ -7274,7 +7184,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/data/calculation/AbstractVolumeDistanceCalculation.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 55
+            "index" : 54
           },
           "region" : {
             "startLine" : 35,
@@ -7322,7 +7232,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/gui/AbstractDataDetailFragment.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 56
+            "index" : 55
           },
           "region" : {
             "startLine" : 231,
@@ -7346,7 +7256,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/gui/AbstractDataDetailFragment.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 56
+            "index" : 55
           },
           "region" : {
             "startLine" : 221,
@@ -7370,7 +7280,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/gui/FirstStartActivity.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 57
+            "index" : 56
           },
           "region" : {
             "startLine" : 49,
@@ -7394,7 +7304,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/gui/FirstStartActivity.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 57
+            "index" : 56
           },
           "region" : {
             "startLine" : 42,
@@ -7490,7 +7400,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/gui/dialog/EditFuelTypeDialogFragment.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 58
+            "index" : 57
           },
           "region" : {
             "startLine" : 42,
@@ -7514,7 +7424,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/gui/dialog/MessageDialogFragment.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 59
+            "index" : 58
           },
           "region" : {
             "startLine" : 29,
@@ -7538,7 +7448,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/gui/dialog/SupportColorPickerDialogFragment.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 60
+            "index" : 59
           },
           "region" : {
             "startLine" : 37,
@@ -7562,7 +7472,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/gui/dialog/SupportMessageDialogFragment.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 61
+            "index" : 60
           },
           "region" : {
             "startLine" : 28,
@@ -7730,7 +7640,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/data/balancing/RefuelingBalancer.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 62
+            "index" : 61
           },
           "region" : {
             "startLine" : 38,
@@ -7754,7 +7664,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/data/report/FuelConsumptionReport.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 63
+            "index" : 62
           },
           "region" : {
             "startLine" : 39,
@@ -7778,7 +7688,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/data/report/FuelPriceReport.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 64
+            "index" : 63
           },
           "region" : {
             "startLine" : 41,
@@ -7802,7 +7712,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/data/report/MileageReport.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 65
+            "index" : 64
           },
           "region" : {
             "startLine" : 40,
@@ -7826,7 +7736,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/data/report/MileageReport.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 65
+            "index" : 64
           },
           "region" : {
             "startLine" : 112,
@@ -7850,7 +7760,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/data/report/MileageReport.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 65
+            "index" : 64
           },
           "region" : {
             "startLine" : 73,
@@ -7922,7 +7832,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/gui/PreferencesReportOrderFragment.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 66
+            "index" : 65
           },
           "region" : {
             "startLine" : 140,
@@ -7970,7 +7880,7 @@
           "artifactLocation" : {
             "uri" : "app/src/main/java/me/kuehle/carreport/util/webdav/WebDavClient.java",
             "uriBaseId" : "%SRCROOT%",
-            "index" : 67
+            "index" : 66
           },
           "region" : {
             "startLine" : 47,
