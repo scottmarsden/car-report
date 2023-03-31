@@ -102,12 +102,12 @@
               }
             },
             {
-              "id": "SSL_CONTEXT",
+              "id": "WEAK_HOSTNAME_VERIFIER",
               "help": {
-                "text": "SSLContext needs to be compatible with TLS 1.2 \nAt CertificateHelper.java:[lines 45-106] \nIn class me.kuehle.carreport.util.webdav.CertificateHelper \nIn method me.kuehle.carreport.util.webdav.CertificateHelper.createSocketFactory(X509Certificate) \nAt CertificateHelper.java:[line 97].",
-                "markdown": "SSLContext needs to be compatible with TLS 1.2 \nAt CertificateHelper.java:[lines 45-106] \nIn class me.kuehle.carreport.util.webdav.CertificateHelper \nIn method me.kuehle.carreport.util.webdav.CertificateHelper.createSocketFactory(X509Certificate) \nAt CertificateHelper.java:[line 97]."
+                "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt WebDavClient.java:[lines 81-84] \nIn class me.kuehle.carreport.util.webdav.WebDavClient$2 \nIn method me.kuehle.carreport.util.webdav.WebDavClient$2.verify(String, SSLSession) \nAt WebDavClient.java:[line 84].",
+                "markdown": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt WebDavClient.java:[lines 81-84] \nIn class me.kuehle.carreport.util.webdav.WebDavClient$2 \nIn method me.kuehle.carreport.util.webdav.WebDavClient$2.verify(String, SSLSession) \nAt WebDavClient.java:[line 84]."
               },
-              "name": "Ssl Context",
+              "name": "WEAK HOSTNAME VERIFIER",
               "properties": {
                 "tags": [
                   "Scan"
@@ -118,11 +118,11 @@
                 "level": "error"
               },
               "fullDescription": {
-                "text": "SSLContext needs to be compatible with TLS 1.2 ."
+                "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack ."
               },
-              "helpUri": "https://slscan.io?q=SSL_CONTEXT",
+              "helpUri": "https://slscan.io?q=WEAK_HOSTNAME_VERIFIER",
               "shortDescription": {
-                "text": "SSLContext needs to be compatible with TLS 1.2 \nAt CertificateHelper.java:[lines 45-106] \nIn class me.kuehle.carreport.util.webdav.CertificateHelper \nIn method me.kuehle.carreport.util.webdav.CertificateHelper.createSocketFactory(X509Certificate) \nAt CertificateHelper.java:[line 97]."
+                "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt WebDavClient.java:[lines 81-84] \nIn class me.kuehle.carreport.util.webdav.WebDavClient$2 \nIn method me.kuehle.carreport.util.webdav.WebDavClient$2.verify(String, SSLSession) \nAt WebDavClient.java:[line 84]."
               }
             }
           ],
@@ -139,48 +139,48 @@
         "invocation": {
           "arguments": [
             "-jar",
-            "/tmp/.mount_scanxvgo2Z/opt/spotbugs/lib/spotbugs.jar",
+            "/tmp/.mount_scanKsmQkY/opt/spotbugs/lib/spotbugs.jar",
             "-textui",
             "-include",
-            "/tmp/.mount_scanxvgo2Z/usr/src/tools_config/spotbugs/include.xml",
+            "/tmp/.mount_scanKsmQkY/usr/src/tools_config/spotbugs/include.xml",
             "-exclude",
-            "/tmp/.mount_scanxvgo2Z/usr/src/tools_config/spotbugs/exclude.xml",
+            "/tmp/.mount_scanKsmQkY/usr/src/tools_config/spotbugs/exclude.xml",
             "-noClassOk",
             "-auxclasspathFromFile",
-            "/tmp/tmpgx_5rs0j",
+            "/tmp/tmpe5tfxbxy",
             "-sourcepath",
-            "/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2",
+            "/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3",
             "-quiet",
             "-medium",
             "-xml:withMessages",
             "-effort:max",
             "-nested:false",
             "-output",
-            "/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/reports/class-report.xml",
-            "/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2"
+            "/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/reports/class-report.xml",
+            "/media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3"
           ],
           "executionSuccessful": true,
-          "commandLine": "-jar /tmp/.mount_scanxvgo2Z/opt/spotbugs/lib/spotbugs.jar -textui -include /tmp/.mount_scanxvgo2Z/usr/src/tools_config/spotbugs/include.xml -exclude /tmp/.mount_scanxvgo2Z/usr/src/tools_config/spotbugs/exclude.xml -noClassOk -auxclasspathFromFile /tmp/tmpgx_5rs0j -sourcepath /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2 -quiet -medium -xml:withMessages -effort:max -nested:false -output /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/reports/class-report.xml /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2",
-          "endTimeUtc": "2020-12-02T18:00:59Z",
+          "commandLine": "-jar /tmp/.mount_scanKsmQkY/opt/spotbugs/lib/spotbugs.jar -textui -include /tmp/.mount_scanKsmQkY/usr/src/tools_config/spotbugs/include.xml -exclude /tmp/.mount_scanKsmQkY/usr/src/tools_config/spotbugs/exclude.xml -noClassOk -auxclasspathFromFile /tmp/tmpe5tfxbxy -sourcepath /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3 -quiet -medium -xml:withMessages -effort:max -nested:false -output /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/reports/class-report.xml /media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3",
+          "endTimeUtc": "2020-12-02T18:06:28Z",
           "workingDirectory": {
-            "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2"
+            "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3"
           }
         }
       },
       "invocations": [
         {
           "executionSuccessful": true,
-          "endTimeUtc": "2020-12-02T18:00:59Z",
+          "endTimeUtc": "2020-12-02T18:06:28Z",
           "workingDirectory": {
-            "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2"
+            "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3"
           }
         }
       ],
       "properties": {
         "metrics": {
-          "total": 16,
+          "total": 17,
           "critical": 0,
-          "high": 16,
+          "high": 17,
           "medium": 0,
           "low": 0
         }
@@ -202,7 +202,7 @@
                   "startLine": 168
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/app/src/main/java/me/kuehle/carreport/Preferences.java"
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/Preferences.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -239,7 +239,7 @@
                   "startLine": 143
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/app/src/main/java/me/kuehle/carreport/provider/DataProvider.java"
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/provider/DataProvider.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -276,7 +276,7 @@
                   "startLine": 152
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/app/src/main/java/me/kuehle/carreport/provider/DataProvider.java"
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/provider/DataProvider.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -313,7 +313,7 @@
                   "startLine": 137
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/app/src/main/java/me/kuehle/carreport/provider/DataProvider.java"
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/provider/DataProvider.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -337,7 +337,7 @@
         {
           "message": {
             "markdown": "",
-            "text": "This use of android/database/sqlite/SQLiteDatabase.execSQL(Ljava/lang/String;)V can be vulnerable to SQL injection (with Android SQL) \nAt DataSQLiteOpenHelperCallbacks.java:[lines 36-97] \nIn class me.kuehle.carreport.provider.DataSQLiteOpenHelperCallbacks \nIn method me.kuehle.carreport.provider.DataSQLiteOpenHelperCallbacks.onUpgrade(Context, SQLiteDatabase, int, int) \nAt DataSQLiteOpenHelperCallbacks.java:[line 60] \nSink method android/database/sqlite/SQLiteDatabase.execSQL(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source me/kuehle/carreport/provider/DataSQLiteOpenHelperCallbacks.prepareSqlStatements(Ljava/lang/String;)[Ljava/lang/String; parameter 0 \nUnknown source me/kuehle/carreport/provider/DataSQLiteOpenHelperCallbacks.prepareSqlStatements(Ljava/lang/String;)[Ljava/lang/String; \nUnknown source me/kuehle/carreport/provider/DataSQLiteOpenHelperCallbacks.getMigrationFileContent(Landroid/content/Context;I)Ljava/lang/String; \nAt DataSQLiteOpenHelperCallbacks.java:[line 57] \nAt DataSQLiteOpenHelperCallbacks.java:[line 58] \nAt DataSQLiteOpenHelperCallbacks.java:[line 71] \nAt DataSQLiteOpenHelperCallbacks.java:[line 72] \nAt DataSQLiteOpenHelperCallbacks.java:[line 76] \nAt DataSQLiteOpenHelperCallbacks.java:[line 78] \nAt DataSQLiteOpenHelperCallbacks.java:[line 82] \nAt DataSQLiteOpenHelperCallbacks.java:[line 94]."
+            "text": "This use of android/database/sqlite/SQLiteDatabase.execSQL(Ljava/lang/String;)V can be vulnerable to SQL injection (with Android SQL) \nAt DataSQLiteOpenHelperCallbacks.java:[lines 36-97] \nIn class me.kuehle.carreport.provider.DataSQLiteOpenHelperCallbacks \nIn method me.kuehle.carreport.provider.DataSQLiteOpenHelperCallbacks.onUpgrade(Context, SQLiteDatabase, int, int) \nAt DataSQLiteOpenHelperCallbacks.java:[line 60] \nSink method android/database/sqlite/SQLiteDatabase.execSQL(Ljava/lang/String;)V \nSink parameter 0 \nUnknown source me/kuehle/carreport/provider/DataSQLiteOpenHelperCallbacks.prepareSqlStatements(Ljava/lang/String;)[Ljava/lang/String; \nUnknown source me/kuehle/carreport/provider/DataSQLiteOpenHelperCallbacks.prepareSqlStatements(Ljava/lang/String;)[Ljava/lang/String; parameter 0 \nUnknown source me/kuehle/carreport/provider/DataSQLiteOpenHelperCallbacks.getMigrationFileContent(Landroid/content/Context;I)Ljava/lang/String; \nAt DataSQLiteOpenHelperCallbacks.java:[line 57] \nAt DataSQLiteOpenHelperCallbacks.java:[line 58] \nAt DataSQLiteOpenHelperCallbacks.java:[line 71] \nAt DataSQLiteOpenHelperCallbacks.java:[line 72] \nAt DataSQLiteOpenHelperCallbacks.java:[line 76] \nAt DataSQLiteOpenHelperCallbacks.java:[line 78] \nAt DataSQLiteOpenHelperCallbacks.java:[line 82] \nAt DataSQLiteOpenHelperCallbacks.java:[line 94]."
           },
           "level": "error",
           "locations": [
@@ -350,7 +350,7 @@
                   "startLine": 60
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/app/src/main/java/me/kuehle/carreport/provider/DataSQLiteOpenHelperCallbacks.java"
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/provider/DataSQLiteOpenHelperCallbacks.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -387,7 +387,7 @@
                   "startLine": 133
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/app/src/main/java/me/kuehle/carreport/provider/base/BaseContentProvider.java"
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/provider/base/BaseContentProvider.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -424,7 +424,7 @@
                   "startLine": 148
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/app/src/main/java/me/kuehle/carreport/provider/base/BaseContentProvider.java"
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/provider/base/BaseContentProvider.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -461,7 +461,7 @@
                   "startLine": 122
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/app/src/main/java/me/kuehle/carreport/provider/base/BaseContentProvider.java"
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/provider/base/BaseContentProvider.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -498,7 +498,7 @@
                   "startLine": 176
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/app/src/main/java/me/kuehle/carreport/util/DemoData.java"
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/util/DemoData.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -535,7 +535,7 @@
                   "startLine": 210
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/app/src/main/java/me/kuehle/carreport/util/DemoData.java"
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/util/DemoData.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -572,7 +572,7 @@
                   "startLine": 51
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/me/kuehle/carreport/util/backup/Backup.java"
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/me/kuehle/carreport/util/backup/Backup.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -609,7 +609,7 @@
                   "startLine": 60
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/me/kuehle/carreport/util/backup/Backup.java"
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/me/kuehle/carreport/util/backup/Backup.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -646,7 +646,7 @@
                   "startLine": 113
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/me/kuehle/carreport/util/backup/Backup.java"
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/me/kuehle/carreport/util/backup/Backup.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -683,7 +683,7 @@
                   "startLine": 86
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/me/kuehle/carreport/util/backup/CSVExportImport.java"
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/me/kuehle/carreport/util/backup/CSVExportImport.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -720,7 +720,7 @@
                   "startLine": 64
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/app/src/main/java/me/kuehle/carreport/util/sync/AbstractSyncProvider.java"
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/util/sync/AbstractSyncProvider.java"
                 },
                 "contextRegion": {
                   "snippet": {
@@ -744,7 +744,7 @@
         {
           "message": {
             "markdown": "",
-            "text": "SSLContext needs to be compatible with TLS 1.2 \nAt CertificateHelper.java:[lines 45-106] \nIn class me.kuehle.carreport.util.webdav.CertificateHelper \nIn method me.kuehle.carreport.util.webdav.CertificateHelper.createSocketFactory(X509Certificate) \nAt CertificateHelper.java:[line 97]."
+            "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt WebDavClient.java:[lines 81-84] \nIn class me.kuehle.carreport.util.webdav.WebDavClient$2 \nIn method me.kuehle.carreport.util.webdav.WebDavClient$2.verify(String, SSLSession) \nAt WebDavClient.java:[line 84]."
           },
           "level": "error",
           "locations": [
@@ -752,19 +752,19 @@
               "physicalLocation": {
                 "region": {
                   "snippet": {
-                    "text": "   SSLContext cryptoContext = SSLContext.getInstance(\"SSL\");\n"
+                    "text": "                return true;\n"
                   },
-                  "startLine": 97
+                  "startLine": 84
                 },
                 "artifactLocation": {
-                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant2/app/src/main/java/me/kuehle/carreport/util/webdav/CertificateHelper.java"
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/util/webdav/WebDavClient.java"
                 },
                 "contextRegion": {
                   "snippet": {
-                    "text": "try {\n   SSLContext cryptoContext = SSLContext.getInstance(\"SSL\");\n"
+                    "text": "            public boolean verify(String hostname, SSLSession session) {\n                return true;\n"
                   },
-                  "endLine": 97,
-                  "startLine": 96
+                  "endLine": 84,
+                  "startLine": 83
                 }
               }
             }
@@ -775,7 +775,44 @@
           },
           "baselineState": "new",
           "partialFingerprints": {},
-          "ruleId": "SSL_CONTEXT",
+          "ruleId": "WEAK_HOSTNAME_VERIFIER",
+          "ruleIndex": 4
+        },
+        {
+          "message": {
+            "markdown": "",
+            "text": "HostnameVerifier that accept any signed certificates makes communication vulnerable to a MITM attack \nAt WebDavClient.java:[lines 87-91] \nIn class me.kuehle.carreport.util.webdav.WebDavClient$3 \nIn method me.kuehle.carreport.util.webdav.WebDavClient$3.verify(String, SSLSession) \nAt WebDavClient.java:[line 91]."
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "snippet": {
+                    "text": "                    return true;\n"
+                  },
+                  "startLine": 91
+                },
+                "artifactLocation": {
+                  "uri": "file:///media/data/muse2/muse2repo_carreport/src_code/carreport-mutant3/app/src/main/java/me/kuehle/carreport/util/webdav/WebDavClient.java"
+                },
+                "contextRegion": {
+                  "snippet": {
+                    "text": "                if(true||session.getCipherSuite().length()>=0){\n                    return true;\n"
+                  },
+                  "endLine": 91,
+                  "startLine": 90
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_confidence": "MEDIUM",
+            "issue_severity": "HIGH"
+          },
+          "baselineState": "new",
+          "partialFingerprints": {},
+          "ruleId": "WEAK_HOSTNAME_VERIFIER",
           "ruleIndex": 4
         }
       ],
@@ -783,7 +820,7 @@
         "description": {
           "text": "Static Analysis Security Test results using @ShiftLeft/sast-scan"
         },
-        "guid": "4d68a159-dba5-4b97-8ef1-6e5bc47fa0ae"
+        "guid": "69b008ef-3903-45f2-820b-53927bab88bb"
       },
       "versionControlProvenance": [
         {
@@ -798,8 +835,8 @@
   "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
   "inlineExternalProperties": [
     {
-      "guid": "4d68a159-dba5-4b97-8ef1-6e5bc47fa0ae",
-      "runGuid": "4d26c3d0-0577-4db5-a961-7d39fea8ad8c"
+      "guid": "69b008ef-3903-45f2-820b-53927bab88bb",
+      "runGuid": "bd7a2b75-cde7-422b-890f-b217cb45d899"
     }
   ]
 }
